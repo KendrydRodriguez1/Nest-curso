@@ -57,7 +57,7 @@ export class PokemonService {
     if (!pokemon){//Encontrar medinate el nombre 
       pokemon = await this.PokemonModel.findOne({name: term.toLowerCase().trim()})
     }
-    if (!pokemon) throw new NotFoundException(`Pokemon with id, name or no `)
+    if (!pokemon) throw new NotFoundException(`Pokemon with id, name or no, verificar`)
     return pokemon;
   }
 

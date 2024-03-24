@@ -22,7 +22,7 @@ import { JoiValidationSchema } from './config/joi.validation';
       rootPath: join(__dirname, '..', 'public'),
     }),
     MongooseModule.forRoot(process.env.MONGODB, {
-      dbName: 'Pokemonsdb'  //para poner en el nombre de como va a estar guardado los pokemons en railway
+      dbName: 'Pokemonsdb'  //para poner en el nombre de como va a estar guardado los pokemons en railway cffff
     }),
     PokemonModule,
     CommonModule,
