@@ -10,7 +10,7 @@ export class PokemonController {
   constructor(private readonly pokemonService: PokemonService) {}
 
   @Post()
-  @HttpCode(200) //cambiar el tipo de error
+  @HttpCode(200) //cambiar el tipo de error, en este caso sera un 200
   create(@Body() createPokemonDto: CreatePokemonDto) {
     return this.pokemonService.create(createPokemonDto);
   }
